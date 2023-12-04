@@ -1,0 +1,42 @@
+.main-footer-container {
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+    position: fixed;
+    bottom: 0;
+    gap: 2rem;
+    padding: 30px;
+    width: 100%;
+}
+.cols {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 0.565rem;
+    border: 2px dotted black;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.cols li {
+    list-style-type: none;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cols a {
+    text-decoration: none;
+    color: white;
+}
+
+p::before {
+    position: absolute;
+    content: "";
+    background-color: red;
+    height: 30px;
+    width: 123px;
+    bottom: 0;
+}
+
+.cols li:hover {
+    transform: translateX(12px);
+}
