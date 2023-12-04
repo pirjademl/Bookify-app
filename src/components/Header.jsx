@@ -1,8 +1,10 @@
 import '../Header.css'
+import { Menu } from 'lucide-react';
 export default function Header() {
     return (
         <header>
             <nav className='top-navbar'>
+                <Menu className="toggle-menu" />
                 <a className='brand-logo' href="">
                     <span>Bookify</span>
                 </a>
