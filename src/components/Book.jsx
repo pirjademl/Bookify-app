@@ -1,33 +1,47 @@
-function Book() {
-    const authorName = "Arundhati Roy";
-    const bookName = "God of small things";
-    const publishedDate = 1997;
-    const mainThemeOfBook = "The God of Small Things, novel written by Arundhati Roy, published in 1997. Set in Kerala in the 1960s, this Booker Prize winner follows Ammu's family through both ordinary and tragic events, focusing most memorably on her “two-egg twins,” Estha and Rahel.";
-    // function handleclick() {
-        // confirm("Do you want to buy the book")
-    // }
+import PropTypes from "prop-types";
+
+function Book(props) {
+    const { src, title, theme, author, date } = props.bookInfo;
+    console.log(src)
+
     return (
         <>
             <div className="book-container">
 
-                <img src="https://source.unsplash.com/user/wsanter" alt="" />
-                <h1>{bookName} </h1>
-                <p>{mainThemeOfBook}</p>
+                <img src={src} alt="" />
+                <h1>{title}</h1>
+                <p>{theme}</p>
                 <div className="book-metadata">
-                    <p >author</p>
-                    <p>{authorName}</p>
+                    <p>author</p>
+                    <p>{author}</p>
                 </div>
                 <div className="book-metadata">
                     <p>published on</p>
-                    <p>{publishedDate}</p>
+                    <p>{date}</p>
                 </div>
-                <div className="book-info ">
-                    <button  className="btn buy-book-btn">Buy Book </button>
-                    <a href="https://www.britannica.com/topic/The-God-of-Small-Things" className="btn read-more-btn">Read more</a>
+                <div className="book-info">
+                    <button className="btn buy-book-btn">Buy Book </button>
+                    <a
+                        href="https://www.britannica.com/topic/The-God-of-Small-Things"
+                        className="btn read-more-btn"
+                    >
+                        Read more
+                    </a>
                 </div>
             </div>
-
         </>
     );
 }
+
+// PropTypes validation
+Book.propTypes = {
+    bookInfo: PropTypes.shape({
+        src: PropTypes.string.isRequired,
+        title: PropTypes.string.isRequired,
+        theme: PropTypes.string.isRequired,
+        author: PropTypes.string.isRequired,
+        date: PropTypes.string.isRequired,
+    }).isRequired,
+};
+
 export default Book;
