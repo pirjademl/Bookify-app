@@ -32,11 +32,12 @@ header {
     padding: 0.567rem;
 
     font-size: 1.3rem;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.6s ease-in-out;
 }
 
 .menu-links li a:hover {
-    background-color: darkgray;
+    background-color: rgba(71, 71, 201, 0.334);
+    /* color: black; */
 }
 
 .toggle-menu {
