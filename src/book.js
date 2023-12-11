@@ -8,7 +8,7 @@ const bookInfo = [
     date: "2020",
   },
   {
-    title: "The god of small things ",
+    title: "The god of small things",
     src: "https://i.cbc.ca/1.5888199.1679399691!/fileImage/httpImage/the-god-of-small-things-by-arundhati-roy.jpg",
     theme:
       "Arundhati Roy's The God of Small Things narrates the story of two fraternal twins whose bond persists over many years of family strife and political unrest. The post-colonial narrative critiques the caste system in India, portraying how it perpetuates injustice.",
@@ -16,7 +16,7 @@ const bookInfo = [
     date: "1997",
   },
   {
-    title: " The Metamorphosis",
+    title: "The Metamorphosis",
     src: "https://i1.sndcdn.com/artworks-000075753858-qzwire-t500x500.jpg",
     theme:
       "The Metamorphosis is about Gregor Samsa, a traveling salesman who wakes up one day to find that he has transformed into a giant insect. His family is disgusted with him, especially when he is no longer able to earn income. Gregor eventually dies after deciding that he is a burden to his family.",

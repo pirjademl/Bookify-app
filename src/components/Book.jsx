@@ -3,8 +3,9 @@ import PropTypes from "prop-types";
 
 function Book(props) {
     const { src, title, theme, author, date } = props.bookInfo;
-    console.log(src)
-
+   function handleClick(){
+    alert("Js sucks")
+   }
     return (
         <>
             <div className="book-container">
@@ -21,7 +22,7 @@ function Book(props) {
                     <p>{date}</p>
                 </div>
                 <div className="book-info">
-                    <button className="btn buy-book-btn">Buy Book </button>
+                    <button onClick={handleClick} className="btn buy-book-btn">Buy Book </button>
                     <a
                         href="https://www.britannica.com/topic/The-God-of-Small-Things"
                         className="btn read-more-btn"

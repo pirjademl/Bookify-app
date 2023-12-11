@@ -1,0 +1,63 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+
+}
+
+header {
+    background-color: #161A30;
+    padding: 20px;
+    /* box-shadow: 4px 5px 3px black; */
+    padding-bottom: 1.2rem;
+}
+
+.brand-logo {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.menu-links {
+    color: black;
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: gray;
+    padding: 0.567rem;
+
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.menu-links li a:hover {
+    background-color: rgba(71, 71, 201, 0.334);
+    /* color: black; */
+}
+
+.toggle-menu {
+    position: absolute;
+    border-radius: 2px;
+    padding: 5px;
+    cursor: pointer;
+    right: 20px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+@media (max-width:500px) {
+    .menu-links {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: flex;
+    }
+}

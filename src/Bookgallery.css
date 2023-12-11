@@ -1,7 +1,0 @@
-.book-components-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    padding: 20px;
-    background-color: #ACC8E5;
-}
