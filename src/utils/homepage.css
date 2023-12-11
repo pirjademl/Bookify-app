@@ -8,6 +8,7 @@
 
 .hero-info {
     max-width: 700px;
+    padding: 20px;
 }
 
 .hero-info p {
@@ -55,7 +56,7 @@
 .search-illustration {
     overflow: hidden;
     aspect-ratio: 1/1;
-    width: 500px;
+    width: 100%;
     pointer-events: none;
     user-select: none;
 
@@ -107,23 +108,29 @@
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
     gap: 1rem;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
-.grid-wrapper > div {
+.grid-wrapper>div {
     background-color: #161A30;
-    padding: 20px; /* Adjust padding as needed */
-    border-radius: 8px; /* Adjust border-radius for rounded corners */
+    padding: 20px;
+    /* Adjust padding as needed */
+    border-radius: 8px;
+    /* Adjust border-radius for rounded corners */
     cursor: pointer;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Initial box shadow */
-    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in; /* Add smooth transitions */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Initial box shadow */
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in;
+    /* Add smooth transitions */
 }
 
-.grid-wrapper > div:hover {
-    background-color: #55198B; /* Change background color on hover */
-    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.5); /* Change box shadow on hover */
+.grid-wrapper>div:hover {
+    background-color: #55198B;
+    /* Change background color on hover */
+    box-shadow: 0 12px 20px rgba(255, 255, 255, 0.5);
+    /* Change box shadow on hover */
 }
 
 
@@ -133,29 +140,33 @@
     font-size: 1rem;
     font-weight: 200;
     padding: 20px;
-    margin: 20px;
+    
     border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
 
 }
 
+.genre img {
+    width: 100%;
+}
 
 
 @media (max-width: 600px) {
     .hero-container {
         margin: 0;
-        padding-inline: 0;
+        padding: 20px;
         justify-content: center;
         align-items: center;
     }
 
     .hero-wrapper {
         flex-direction: column-reverse;
+        padding: 20px;
     }
 
     .hero-info {
-        padding: 0;
+        padding-inline: 30px;
     }
 
     .books-section {
