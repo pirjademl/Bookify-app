@@ -19,6 +19,10 @@ header {
     font-size: 1.5rem;
 }
 
+.close-btn {
+    display: none;
+}
+
 .menu-links {
     color: black;
     list-style-type: none;
@@ -52,9 +56,43 @@ header {
     display: none;
 }
 
-@media (max-width:500px) {
+@media (max-width: 600px) {
+    .top-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .menu-links {
-        display: none;
+        flex-direction: column;
+        justify-content: center;
+        color: black;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .menu-links-wrapper {
+        position: fixed;
+        width:0;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color:  #161A30;
+        overflow: hidden;
+        z-index: 8888;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .menu-links-wrapper.open {
+        width: 300px;
+        
+    }
+
+   
+
+    .close-btn {
+        display: flex;
+        top: 12px;
+        right: 12px;
+        position: absolute;
     }
 
     .toggle-menu {

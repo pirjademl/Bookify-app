@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Homepage from './components/Homepage';
 import Footer from './components/Footer';
 import Bookgallery from './components/Bookgallery';
+import SearchBook from  './components/SearchBook'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/home" element={<Homepage />} />
-          {/* <Route path="/search" element={<SearchBook />} /> */}
+          <Route path="/search" element={<SearchBook />} />
 
           <Route path="/top-books" element={< Bookgallery />} />
         </Routes>
