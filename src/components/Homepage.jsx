@@ -1,4 +1,3 @@
-import search from '../assets/search1.svg';
 import working from '../assets/working.gif'
 import fiction from '../assets/fictionBooks.png';
 import astronomer from '../assets/literature.jpg';
@@ -21,7 +20,7 @@ export default function Homepage() {
                     <div className='hero-info'>
                         <h1 className="hero-heading">Discover Your Next Adventure with Bookify</h1>
                         <p className="hero-para">
-                            Explore a world of captivating stories. Find your favorite books and immerse yourself in the joy of reading. Bookify offers a vast collection of genres, from thrilling mysteries to heartwarming romances. Whether you're a seasoned reader or just starting your literary journey, there's something for everyone.
+                            Explore a world of captivating stories. Find your favorite books and immerse yourself in the joy of reading. Bookify offers a vast collection of genres, from thrilling mysteries to heartwarming romances. Whether youre a seasoned reader or just starting your literary journey, there's something for everyone.
                         </p>
                         <div className='hero-search'>
                             <button className='start-reading'>start reading</button>
@@ -38,7 +37,7 @@ export default function Homepage() {
             </div >
             <div className='books-section'>
 
-                <h4>What are the books availible on Bookify</h4>
+                <h4 className='books-section-heading'>What are the books availible on Bookify</h4>
                 <div className="grid-wrapper book-genre">
                     <div className='genre fiction'>
                         <img className='fiction-image' src={fiction} alt="Fiction" />
