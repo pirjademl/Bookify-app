@@ -1,5 +1,5 @@
 .hero-container {
-    background-color: #161A30;
+    background-color: #171C28;
     padding-top: 20px;
     padding-inline: 30px;
     color: gray;
@@ -16,12 +16,12 @@
     padding: 10px;
     max-width: 600px;
     font-size: 1.2em;
-    color: #555;
+    color: gray;
     font-weight: 500;
 }
 
 .hero-info h1 {
-    text-wrap: balance;
+    text-wrap: stable;
 }
 
 .hero-wrapper {
@@ -80,33 +80,34 @@
     font-size: 1rem;
     padding: 0.975rem 0.7rem;
     border-radius: 0.97rem;
-    color: #ddd;
-    transition: background-color 0.3s ease-in-out;
+    color: #FFFFFF;
+    transition: transform 0.3s ease-in-out;
 
 }
 
 .start-reading:hover {
-    opacity: 0.3;
+    transform: translate(0, -2px);
 }
 
 .search-book {
-    padding: 0.975rem 2.4rem;
+    padding: 0.975rem 1rem;
     border-radius: 0.97rem;
     background-color: #55198B;
     border: none;
     text-transform: uppercase;
     color: white;
     font-size: 1rem;
+    
 }
 
 .search-book:hover {
-    opacity: 0.7;
+    transform: translate(0, -2px);
 }
 
 .books-section {
     padding: 40px;
-    background-color: #161A30;
-    color: gray;
+    background-color: #171C28;
+    color: #FFFFFF;
 }
 
 
@@ -118,7 +119,7 @@
 }
 
 .grid-wrapper>div {
-    background-color: #161A30;
+    background-color: #171C28;
     padding: 20px;
 
     border-radius: 8px;
@@ -137,7 +138,7 @@
 
 .genre {
 
-    color: #555;    
+    color: gray;
     font-size: 1em;
     font-weight: 200;
     padding: 20px;

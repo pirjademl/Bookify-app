@@ -1,6 +1,6 @@
 footer {
-    background-color: black;
-    padding:20px;
+    background-color: #171C28;
+    padding: 20px;
     color: gray;
     margin-top: auto;
 }
@@ -10,9 +10,21 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.footer-navigation-links ul li {
+    text-decoration: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: gray;
+    font-size: 0.9rem;
+
+}
+
 .footer-links ul {
     list-style-type: none;
     display: flex;
+
     flex-direction: column;
     gap: 1rem;
 
@@ -23,8 +35,14 @@ footer {
     display: flex;
     gap: 1rem;
     color: gray;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease-in-out;
 }
-.footer-links ul li a span{
-    color:gray;
+
+.footer-links ul li a:hover {
+    transform: translateX(5px);
+}
+
+.footer-links ul li a span {
+    color: gray;
 }

@@ -7,9 +7,9 @@ nav {
 }
 
 header {
-    background-color: #161A30;
+    background-color: #171C28;
     padding: 20px;
-    /* box-shadow: 4px 5px 3px black; */
+    box-shadow: 20px 20px 20px rgba(71, 71, 201, 0.334);
     padding-bottom: 1.2rem;
 }
 

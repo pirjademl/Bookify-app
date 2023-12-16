@@ -1,11 +1,12 @@
-.search-form-container{
-    background-color: #ACC8E5;
+.search-form-container {
+    background-color: #171C28;
     color: white;
     padding: 30px;
     box-sizing: border-box;
 
 }
-.search-form-wrapper{
+
+.search-form-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -20,7 +21,8 @@
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.search-field{
+
+.search-field {
     padding: 20px 12px 12px 12px;
     background-color: transparent;
     border-radius: 10px;
@@ -30,9 +32,10 @@
     color: gray;
     font-size: 1rem;
 }
-.search-btn{
+
+.search-btn {
     padding: 20px 12px 12px 12px;
-    background-color:black;
+    background-color: black;
     border-radius: 10px;
     outline: none;
     border: 0.9px solid gray;

@@ -1,4 +1,5 @@
 import '../utils/footer.css';
+import { Link } from 'react-router-dom';
 import { Instagram, Linkedin, Twitter, Github } from 'lucide-react';
 const Footer = () => {
     return (
@@ -8,11 +9,13 @@ const Footer = () => {
                     <div className="footer-wrapper">
                         <div className='footer-links'>
                             <p>Navigation Links</p>
-                            <ul>
-                                <li>Home</li>
-                                <li>Search Books</li>
-                                <li>Login</li>
-                                <li>Signup</li>
+                            <ul className='footer-navigation-links'>
+                                <Link className='nav-link' to='/'>Home</Link>
+                                <Link className='nav-link' to='/search'>Search Book</Link>
+                                <Link className='nav-link' to='/top-books'>Top Books</Link>
+                                <Link className='nav-link' to='/login'>Login</Link>
+
+
                             </ul>
                         </div>
                         <div className='footer-links'>
@@ -35,22 +38,22 @@ const Footer = () => {
                                 <li>
                                     <a href="">
                                         <Twitter size={24} />
-                                        <span>Instagram</span>
+                                        <span>Twittter</span>
 
                                     </a>
                                 </li>
                                 <li>
                                     <a href="">
                                         <Github size={24} />
-                                        <span>Instagram</span>
+                                        <span>Github</span>
 
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <div className='footer-links'>
-                            Lorem ipsum dolor sit amet consectetur
-                            <ul>
+                            Contact Details
+                            <ul className='details'>
                                 <li>
                                     <a href="https://magdum.me">Portfolio</a>
                                 </li>
