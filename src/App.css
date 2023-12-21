@@ -28,6 +28,11 @@ body {
   border-radius: 0.9rem;
 
 }
+.book-container h1{
+font-size:1.3em;
+font-weight:700;
+}
+  
 
 .book-metadata {
   display: flex;
